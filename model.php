@@ -1,4 +1,5 @@
 <?php
+//اتصال به دیتابیس و جدول دانشجو
 class DB {
   private $pdo = null;
   private $stmt = null;
@@ -26,4 +27,6 @@ die($ex->getMessage());
     return $result;
   }
 }
+
+
 ?>
