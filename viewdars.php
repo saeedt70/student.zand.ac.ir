@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+//انتخاب واحد یو ای
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,7 +32,7 @@ a:active {
  require "contorollerdars.php";
  $users = new Users();
 
-$users->getdars();
+$users->getdars();      //نمایش دروس
  foreach ($users->getdars() as $u) {
     echo "<center>"."<li>" ." کد درس= ". $u['code'] ."***". " نام درس= ". $u['name'] ."***"." استاد= ". $u['ostad'] ."***"." ساعت کلاس= ". $u['date'] . "</li>"."<center>"."<br>";
   }
@@ -38,10 +40,10 @@ $users->getdars();
 if(isset($_POST['btn']))
 {
 
-$idu=$_POST['idu'];
-$idd=$_POST['idd'];
+$idu=$_POST['idu'];//ای دی کاربر
+$idd=$_POST['idd'];// ای دی درس
 
-$users->setsdars($idu,$idd);
+$users->setsdars($idu,$idd);//انتخاب واحد
 
 }
  
