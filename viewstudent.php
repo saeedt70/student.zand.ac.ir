@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+//یو ای ثبت نام دانشجو
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,7 +39,7 @@ $addres =$_POST['addres'];
   require "model.php";
   require "contorolleruser.php";
   $users = new Users();
-$users->setstudent($name,$family,$mobile, $jensiat, $reshte, $addres);
+$users->setstudent($name,$family,$mobile, $jensiat, $reshte, $addres);//ثبت دانشجو
 }
  
 ?>
