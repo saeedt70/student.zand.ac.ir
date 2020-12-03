@@ -1,4 +1,4 @@
-//یو ای ثبت نام دانشجو
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,8 +36,11 @@ $mobile=$_POST['mobile'];
 $jensiat=$_POST['jensiat'];
 $reshte =$_POST['reshte'];
 $addres =$_POST['addres'];
-  require "model.php";
-  require "contorolleruser.php";
+$path=dirname(__DIR__). '/model/'.'model.php';
+$path1=dirname(__DIR__). '/contoroller/'.'contorolleruser.php';
+ require "$path";
+ require "$path1";
+
   $users = new Users();
 $users->setstudent($name,$family,$mobile, $jensiat, $reshte, $addres);//ثبت دانشجو
 }
