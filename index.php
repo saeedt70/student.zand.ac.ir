@@ -1,4 +1,4 @@
-﻿
+
 <html>
 <body>
   <center>
@@ -18,9 +18,12 @@ if(isset($_GET['ro']))
 {
 	$r=$_GET['ro'];
 	if($r==1)
-  require('viewstudent.php');
+
+
+
+  require(dirname(__FILE__) . '/view/'.'viewstudent.php');
 if($r==2)
-  require('viewdars.php');
+  require(dirname(__FILE__) . '/view/'.'viewdars.php');
 
 }
 ?>
