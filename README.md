@@ -6,3 +6,4 @@ mohammad alipnh
 
 
 <a href="https://uupload.ir/view/4prz_222222.png" target="_blank"><img src="https://uupload.ir/view/4prz_222222.png" border="0" width="500" height="600" alt="آپلود عکس" /></a>
+[URL=https://uupload.ir/][IMG]https://uupload.ir/files/4prz_222222.png[/IMG][/URL]
